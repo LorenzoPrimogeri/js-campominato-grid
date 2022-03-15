@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#Grid{
+   width: 800px;
+   height: 800px;
+    margin: 30px auto;
+    background-color: yellowgreen;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bg-acqua{
+    background-color: aqua;
+}
+.cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 10%;
+    border: 1px solid black;
+    
+}
