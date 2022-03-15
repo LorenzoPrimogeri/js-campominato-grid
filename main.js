@@ -19,7 +19,6 @@ if (difficolta == 1) {
     righe = 7;
     colonne = 7;
 }
-
 let totCell = righe * colonne;
 function generateRandomNumber(min, max) {
     const range = (max - min) + 1;
@@ -37,7 +36,6 @@ function creazioneCelle(difficolta) {
         element.classList.add("difficolta-3");
     }
     return element;
-
 }
 function controlloNumeri(min, max, registro) {
     let result = generateRandomNumber(min, max)

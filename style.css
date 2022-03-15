@@ -18,7 +18,7 @@
 #Grid{
    width: 800px;
    height: 800px;
-    margin: 30px auto;
+    margin: 50px auto;
     background-color: yellowgreen;
     display: flex;
     flex-wrap: wrap;
