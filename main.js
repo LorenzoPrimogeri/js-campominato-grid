@@ -1,11 +1,10 @@
 let righe;
 let colonne;
-
+let difficolta;
 const numeriEstratti = [];
-let difficolta = parseInt(prompt("scegli difficolta da 1 a 3"));
-while (difficolta < 1 || difficolta > 3 || isNaN(difficolta)) {
+do {
     difficolta = parseInt(prompt("scegli difficolta da 1 a 3"));
-}
+} while (difficolta < 1 || difficolta > 3 || isNaN(difficolta));
 if (difficolta == 1) {
     //con difficoltà 1 => tra 1 e 100
     righe = 10;
