@@ -3,6 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+.difficolta-1{
+    width: 10%;
+    height: 10%;
+}
+.difficolta-2{
+    width: calc(100%/9);
+    height: calc(100%/9);
+}
+.difficolta-3{
+    width: calc(100%/7);
+    height: calc(100%/7);
+}
 #Grid{
    width: 800px;
    height: 800px;
@@ -18,8 +30,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10%;
-    height: 10%;
     border: 1px solid black;
     
 }
