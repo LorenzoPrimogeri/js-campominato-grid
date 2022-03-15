@@ -20,11 +20,6 @@ if (difficolta == 1) {
     colonne = 7;
 }
 let totCell = righe * colonne;
-function generateRandomNumber(min, max) {
-    const range = (max - min) + 1;
-    const numeroRandom = Math.floor(Math.random() * range + min);
-    return numeroRandom;
-}
 function creazioneCelle(difficolta) {
     const element = document.createElement("div");
     element.classList.add("cell")
@@ -36,6 +31,11 @@ function creazioneCelle(difficolta) {
         element.classList.add("difficolta-3");
     }
     return element;
+}/* Se vogliamo inserire i numeri in modo casuale
+function generateRandomNumber(min, max) {
+    const range = (max - min) + 1;
+    const numeroRandom = Math.floor(Math.random() * range + min);
+    return numeroRandom;
 }
 function controlloNumeri(min, max, registro) {
     let result = generateRandomNumber(min, max)
@@ -43,14 +43,16 @@ function controlloNumeri(min, max, registro) {
         result = generateRandomNumber(min, max)
     }
     return result;
-}
-for (let index = 0; index < totCell; index++) {
+}*/
+for (let index = 1; index <= totCell; index++) {
     const grid = document.getElementById("Grid");
     const cell = creazioneCelle(difficolta);
+    /* Se vogliamo inserire i numeri in modo casuale
     const random = controlloNumeri(1, totCell, numeriEstratti);
     numeriEstratti.push(random);
-    cell.innerText = random;
-    cell.id = random;
+     */
+    cell.innerText = index;
+    cell.id = index;
     cell.addEventListener('click', function () {
         cell.classList.add("bg-acqua");
     })
